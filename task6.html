@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета посетителя ресторана</title>
+    <style>
+        body  { background-color: #FFEBCD }
+    </style>
+</head>
+
+<body>
+    <h1>Анкета посетителя ресторана</h1>
+    <h3>Контактная информация</h3>
+    <form action="">
+        <div>
+            <label for="name">Имя</label>
+            <br>
+            <input id="name" type="text" placeholder="" name="name" required>
+        </div>
+        <br>
+        <div>
+            <label for="number">Телефон</label>
+            <br>
+            <input id="number" type="text" placeholder="" name="number" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <br>
+            <input id="email" type="email" placeholder="" name="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="date">Дата посещения</label>
+            <br>
+            <input id="date" type="date" placeholder="дд.мм.гггг" name="date" required>
+        </div>
+        <h3>Персональная информация</h3>
+        <div>
+            <label for="age">Возраст</label>
+            <br>
+            <input id="age" type="number" placeholder="" name="age" required>
+        </div>
+        <br>
+        <div>
+            <label for="kitchen">Любимая кухня</label>
+            <br>
+                <select>
+                    <option>Русская</option>
+                    <option>Итальянская</option>
+                    <option>Американская</option>
+                    <option>Японская</option>
+                    <option>Китайская</option>
+                    <option>Узбекская</option>
+                    <option>Кавказская</option>
+                </select>
+        </div>
+        <br>
+        <div>
+            <label for="dishes">Какие блюда вы бы хотели видеть в меню</label>
+            <br>
+            <textarea></textarea>
+        </div>
+        <br>
+        <div>
+            Почему вы выбрали наше заведение?
+            <br>
+            <label>
+                <img src="images/book_icon.png" alt="" height="20">
+                <input type="radio" name="reason" value="1">
+                Недалеко от работы
+            </label>
+            <br>
+            <label>
+                <img src="images/book_icon.png" alt="" height="20">
+                <input type="radio" name="reason" value="2">
+                Реклама
+            </label>
+            <br>
+            <label>
+                <img src="images/book_icon.png" alt="" height="20">
+                <input type="radio" name="reason" value="3">
+                Посоветовали
+            </label>
+        </div>
+        <br>
+        <div>
+            Вы будете рекомендовать наше заведение?
+            <br>
+            <label>
+                <img src="images/book_icon.png" alt="" height="20">
+                <input type="radio" name="recommend" value="1">
+                Да
+            </label>
+            <br>
+            <label>
+                <img src="images/book_icon.png" alt="" height="20">
+                <input type="radio" name="recommend" value="2">
+                Нет
+            </label>
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Сброс">
+            <input type="submit" value="Отправить">
+        </div>
+<br>
+<br>
+    </form>
+</body>
+</html>
