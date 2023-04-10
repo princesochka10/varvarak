@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа</title>
+    <style>
+        .big {font-size: 3em;}
+        .tex {
+            font-family: serif;
+            letter-spacing: -0.1em;
+        }
+        .tex span {vertical-align: -0.2em;}
+        .blue {color:blue}
+        .green {color:green}
+        .red {color:red}
+        .box {
+            color: black; 
+            font-size: 18px; 
+            background-color: rgb(231, 231, 231)
+        }
+        .text {
+            color:grey;
+            font-size: 18px;
+            background-color: white
+        }
+        .comment {
+            color: grey; 
+            font-size: 18px; 
+            font-style: italic;
+            font-weight: bolder;
+            background-color: rgb(231, 231, 231)
+        }
+        .b {
+            margin: 15px;
+            background-color: black
+        }
+        #d1 {
+            width: 134px;
+            height: 21px;
+            border: 2px solid black
+        }
+        .white {
+            font-size: larger;
+            color: white;
+            background-color: black
+        }
+        .black {
+            font-size:larger;
+            color: black;
+            background-color: white
+        }
+    </style>
+</head>
+<body>
+    <p class="big"><span class="red">J</span>o<span class="blue">y</span> of <span class="tex">T<span>E</span><span class="green">X</span></span></p>
+    
+    <br>
+
+    <h1 style="font-size: 20px">Creating chat</h1>
+    <p class="text">
+        To create a chart, we need to instantiate the <span class="box">Chart</span> class. To do this, we need to pass in the 2d context of where we want to draw the chart. Here's an example.
+    </p>
+    <span class="box">
+        <span class="blue">&lt;canvas</span> 
+        <span class="green">id=</span>
+        <span class="red">&quotmyChart&quot</span> 
+        <span class="green">width=</span>
+        <span class="red">&quot400&quot</span> 
+        <span class="green">height=</span>
+        <span class="red">&quot400&quot</span>
+        <span class="blue">&gt; &lt;/canvas&gt</span>
+    </span>
+    <p>
+        <span class="comment">//Get the context of the canvas element we want to select</span>
+        <br>
+        <span class="box">
+        <b>var</b> ctx = <span class="blue">document</span>.getElementByld(<span class="red">"myChart"</span>).getContext(<span class="red">2d</span>);
+        <br>
+        <b>var</b> myNewChart - <b>new</b> Chart(ctx).PolarArea(data);</span>
+    </p>
+    <p class="text">We can also get the context of our canvas with JQuery. To do this, we need to get the DOM node out of the jQuery collection, and call the
+        <span class="box">getContext("2d")</span> method on that.
+    </p>
+    <p>
+        <span class="comment">// Get context with jQuery - using jQuery's .get() method.</span>
+        <br>
+        <span class="box"><b>var</b> ctx = $(<span class="red">"#myChart"</span>).get(<span class="blue">0</span>).GetContext(<span class="red">"2d"</span>);</span>
+        <br>
+        <span class="comment">// This will get the first retirned node in the jQuery collection</span>
+        <br>
+        <span class="box"><b>var</b> myNewChart = <b>new</b> Chart(ctx);</span>
+    </p>
+    <p class="text">
+        After we've instantiated the Chart class on the canvas we want to draw on, Chart.js will handle the scaling for retina displays.
+    </p>
+
+    <br>
+
+    <div class="b" id="d1">
+        <span class="black">BLACK</span>
+        <span class="white">WHITE</span>
+    </div>
+</body>
+</html>
