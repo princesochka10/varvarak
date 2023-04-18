@@ -1,4 +1,71 @@
-.header {
-    display: flex;
+*{
+  
+    margin:0;
+}
 
+.header{
+    display:flex;
+}
+
+.bg-gray{
+background-color:#333 ;
+color:#fff ;
+}
+
+.header-title{
+    width: 20%;
+}
+
+.header-menu{
+    width:60 ;
+}
+
+.header-search{
+    width: 20%;
+}
+
+.header-menu.menu{
+    list-style-type: none;
+}
+
+.header-menu.menu.menu-item{
+    float: left;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header-menu.menu.menu-item.active{
+    background-color: #04AA6d !important;
+}
+.header-menu.menu.menu-item:hover{
+    background-color: #000;
+}
+
+.header-search.form-search{
+    height:100%;
+}
+
+.header-search.form-input{
+    height: 75px;
+    margin:5px;
+    padding:0;
+    border:0;
+    border-radius:5px;
+    padding-left: 10px;
+}
+
+.main{
+    display: flex;
+}
+.main.sidebial-left{
+width: 20px;
+}
+
+.main.content{
+    width: 20px
+}
+
+.main.sidebial-righ{
+    width: 20px
+    
 }
